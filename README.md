@@ -28,40 +28,44 @@
 ```bash
 git clone https://github.com/danminn10/website-ban-quan-ao.git
 cd website-ban-quan-ao
-2. Cấu hình cơ sở dữ liệu
-Mở file src/main/resources/application.properties và chỉnh sửa thông tin kết nối database:
+```
 
-properties
-Copy
-Edit
+### 2. Cấu hình cơ sở dữ liệu
+
+Mở file `src/main/resources/application.properties` và chỉnh sửa thông tin kết nối database:
+
+```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/ten_csdl
 spring.datasource.username=root
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
-Bạn có thể dùng MySQL, hoặc chuyển sang H2 nếu muốn test nhanh.
+```
 
-3. Chạy ứng dụng
-bash
-Copy
-Edit
+> Bạn có thể dùng MySQL, hoặc chuyển sang H2 nếu muốn test nhanh.
+
+### 3. Chạy ứng dụng
+
+```bash
 ./mvnw spring-boot:run
+```
+
 Hoặc mở bằng IDE như IntelliJ và nhấn nút Run.
 
-4. Truy cập API
-bash
-Copy
-Edit
+### 4. Truy cập API
+
+```
 http://localhost:8080/api/...
+```
+
 Nếu có Swagger:
 
-bash
-Copy
-Edit
+```
 http://localhost:8080/swagger-ui/index.html
-📁 Cấu trúc thư mục
-bash
-Copy
-Edit
+```
+
+## 📁 Cấu trúc thư mục
+
+```
 src/
 ├── main/
 │   ├── java/com/example/project/
@@ -73,8 +77,16 @@ src/
 │   └── resources/
 │       ├── application.properties
 │       └── data.sql         # (Tùy chọn) Dữ liệu mẫu
-🧑‍💻 Đóng góp
-Mọi đóng góp đều được hoan nghênh! Hãy tạo issue hoặc gửi pull request nếu bạn muốn đóng góp.
+```
 
-📄 Giấy phép
-Dự án này sử dụng MIT License.
+## 🧑‍💻 Đóng góp
+
+Mọi đóng góp đều được hoan nghênh! Hãy tạo `issue` hoặc gửi `pull request` nếu bạn muốn đóng góp.
+
+## 📄 Giấy phép
+
+Dự án này sử dụng [MIT License](LICENSE).
+
+---
+
+**Tác giả**: [@danminn10](https://github.com/danminn10)
